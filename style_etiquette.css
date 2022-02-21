@@ -1,0 +1,124 @@
+:root {
+  --main-bg-color: rgb(25, 78, 146);
+  --bg-text: #00a47a;
+  --color-DPE1: rgb(0, 156, 109);
+  --color-DPE2: rgb(82, 177, 83);
+  --color-DPE3: rgb(120, 189, 118);
+  --color-DPE4: rgb(244, 231, 15);
+  --color-DPE5: rgb(240, 181, 15);
+  --color-DPE6: rgb(235, 130, 53);
+  --color-DPE7: rgb(215, 34, 31);
+  --color-GES1: rgb(164, 219, 248);
+  --color-GES2: rgb(140, 180, 211);
+  --color-GES3: rgb(119, 146, 177);
+  --color-GES4: rgb(96, 111, 143);
+  --color-GES5: rgb(77, 82, 113);
+  --color-GES6: rgb(77, 82, 113);
+  --color-GES7: rgb(40, 27, 53);
+}
+body {
+  background-color: var(--main-bg-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-align: center;
+  /* border: 1px solid brown; */
+}
+
+h1 {
+  color: white;
+  margin: 15px 5px;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-bottom: 5px solid white;
+}
+
+#formulaireDPE_GLS {
+  height: 50px;
+  color: azure;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
+}
+
+#formulaireDPE_GLS h2 {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#formulaireDPE_GLS h3 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+input[type="text"] {
+  width: 60px;
+  height: 30px;
+  font-family: verdana sans-serif;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  background-color: plum;
+}
+
+#DPE_GLS {
+  width: 500px;
+  height: 50px;
+  font-style: verdana sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: 0.2s;
+  transform: scale(1.1);
+  margin-top: 70px;
+}
+
+.DPE_GLS_NOK {
+  width: 400px;
+  height: 40px;
+  font-style: verdana sans-serif;
+  color: gray;
+  font-size: 2rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: 0.2s;
+  transform: scale(1.1);
+  margin-top: 70px;
+}
+
+#DPE_GLS:hover {
+  cursor: pointer;
+}
+#DPE_GLS:active {
+  transform: scale(1.1);
+  background-color: green;
+}
+
+#displayLabel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  text-align: center;
+}
+
+.hide {
+  visibility: hidden;
+}
+canvas {
+  background: white;
+  width: 600px;
+  height: 600px;
+  margin: 20px;
+}
